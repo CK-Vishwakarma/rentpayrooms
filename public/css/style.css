@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .textsizeNBtop {
+        font-size: 12px;
+    }
+    .logoIMG{
+       transform: scale(.8);       
+    }
+    .heading-text{
+        font-size: 24px !important;
+    }
+}
+/* globals */
+.container-fluid {
+    /* max-width: 1350px; */
+}
+
+.container {
+    /* max-width: 1350px; */
+}
+a{
+    text-decoration: none !important;
+}
+
+.logoIMG{
+    width: 100px;    
+}
+.heading-text{
+    font-size: 28px;
+}
+.sub-heading-text{
+ font-size: 20px !important;
+}
+.paragraph-text{
+
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

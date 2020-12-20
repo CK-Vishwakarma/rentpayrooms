@@ -1,0 +1,48 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.mobile_verify_input_box{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    border-radius: 15px !important;
+    border: 2px rgb(173, 173, 173) solid;
+
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+/* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    /* body {
+      background-color: olive;
+    } */
+    .mobile_verify_input_box{
+        height: 3rem;
+        width: 3rem;
+    }
+  }
+
+/* .mv:not(:last-child) {
+    margin-right: 1rem;
+
+} */
+
+.model_deco{
+    border-radius: 15px !important;
+}

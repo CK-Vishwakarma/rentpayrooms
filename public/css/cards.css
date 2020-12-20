@@ -1,0 +1,69 @@
+.priceTag {
+    top:0;
+    left:0;
+    z-index: 5;
+    padding: 0.5rem .5rem;
+    background-color: rgba(0, 0, 0, 0.596);
+    color:white;
+    border-radius: 0 0 10px 0;
+}
+.fa-rupee-sign{
+    color: white;
+}
+
+.areaTag {
+    bottom:0;
+    right:0;
+    z-index: 5;
+    padding: 0.5rem .5rem;
+    background-color: rgba(0, 0, 0, 0.596);
+
+    color:white;
+    border-radius: 10px 0 0 0;
+}
+.favTag{
+    top:.3rem;
+    right:.3rem;
+    z-index: 5;
+    padding: 0.5rem .5rem;
+    background-color:transparent;
+    color: rgba(0, 0, 0, 0.548);
+    
+}
+
+.fa-heart:hover{
+    color: rgba(255, 19, 19, 0.856);
+}
+.fa-share-alt:hover{
+    color: white;
+}
+
+.ratingTag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:-1rem;
+    left:1rem;
+    z-index: 5;
+    padding:0.4rem;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+}
+.animate{
+    transition: all 0.3s ease;
+
+}
+.animate:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 320px) {  
+    .text-muted{
+        font-size: 0.65rem;
+    }
+    h6{
+        font-size: 0.8rem;
+    }
+  }

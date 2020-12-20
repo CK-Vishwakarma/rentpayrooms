@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    <title>RentPayRooms.com</title>
+
+
+</head>
+
+
+<!-- ========================== TOP NAVBAR ============================= -->
+{{>topNavbar}}
+<!-- ========================== END TOP NAVBAR ============================= -->
+
+
+<!-- ========================== MAIN NAVBAR ============================= -->
+{{>mainNavbar}}
+<!-- ========================== END MAIN NAVBAR ============================= -->
+
+
+<!-- ========================== LOGIN MODEL ============================= -->
+{{>loginModel}}
+<!-- ========================== END LOGIN MODEL ============================= -->
+
+
+<!-- ========================== SIGNUP MODEL ============================= -->
+{{>signUpModel}}
+<!-- ========================== END SIGNUP MODEL ============================= -->
+
+
+<!-- ========================== SIGNUP BY MOBILE NO. MODEL ============================= -->
+{{>signUpModelByMobileNumber}}
+<!-- ========================== END SIGNUP BY MOBILE NO. MODEL ============================= -->
+
+
+
+
+<!-- ========================================================================
+                    END OF NAVBAR SECTION
+  ======================================================================== -->
+
+{{!-- ######################---- BODY SECTION ----######################  --}}
+
+{{!-- ========================================================================  --}}
+<section class="container-fluid">
+    <section class="container">
+        <div class="row ">
+
+            <!-- ========================== SEARCH FORM ============================= -->
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 p-2 order-2">
+                {{>searchForm}}
+            </div>
+
+            <!-- ========================== END OF SEARCH FORM ============================= -->
+
+            <!-- ========================== CAROUSEL SECTION ============================= -->
+
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 p-auto m-auto order-1 ">
+                {{>homePageCarousel}}
+            </div>
+            <!-- ========================== END OF CAROUSEL SECTION ============================= -->
+        </div>
+
+
+    </section>
+
+    {{!-- ========================================================================  --}}
+
+    <hr class="w-50 my-5">
+
+    <h1 class="text-center mb-5">Featured Properties</h1>
+
+    {{!-- ========================================================================  --}}
+
+    <section class="container-fluid ">
+        <!-- ========================== FEATURED PROPERTY CARDS ============================= -->
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+                {{>propertyCard}}
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+                {{>propertyCard}}
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+                {{>propertyCard}}
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+                {{>propertyCard}}
+            </div>
+        </div>
+        <!-- ========================== END OF FEATURED PROPERTY CARDS ============================= -->
+    </section>
+
+    {{!-- ========================================================================  --}}
+    <hr class="w-50 my-5">
+    {{!-- ========================================================================  --}}
+
+    <!-- ========================== FOOTER SECTION ============================= -->
+
+    {{>footer}}
+    <!-- ========================== END OF FOOTER SECTION ============================= -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./bootstrap/bootstrap.bundle.min.js"></script> -->
+    <script src="./index.js"></script>
+    </body>
+
+</html>

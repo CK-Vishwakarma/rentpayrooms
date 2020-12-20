@@ -1,0 +1,93 @@
+.details-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.details-sub-title {
+    font-size: 0.9rem;
+    color: #464646;
+}
+
+.property-details-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    z-index: 500;
+
+    box-shadow: 0 2px 10px -8px black;
+}
+@media screen and (max-width: 999px) {
+    .property-details-bar {
+        display: none;
+    }   
+}
+
+.carousel-div {
+    position: relative;
+}
+.carousel-div-info {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index:100;
+    display: none;
+}
+@media screen and (max-width: 999px) {
+    .carousel-div-info{
+        display: flex;
+    }
+}
+.mobile-details{
+    display: none;
+}
+@media screen and (max-width: 999px) {
+    .mobile-details{
+        display: flex;
+    }
+}
+.nav-icon-size {
+    font-size: 44px;
+}
+@media screen and (max-width: 768px) {
+    .nav-icon-size {
+        font-size: 30px;
+    }
+}
+
+.carousel-imgs {
+    width: 100%;
+    height: 25rem;
+}
+.fa-icons {
+    font-size: 1.2rem;
+}
+.pdh:hover {
+    color: red;
+    cursor: pointer;
+}
+.readMoreBtn {
+    cursor: pointer;
+}
+.readMoreTxt {
+    display: none;
+}
+.rmAnim {
+    position: relative;
+    animation: rmAnim 1s linear infinite alternate;
+}
+
+@keyframes rmAnim {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 10px;
+    }
+}

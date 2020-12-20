@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+
+    <title>Card Details</title>
+</head>
+
+<body>
+    {{>topNavbar}}
+    {{>mainNavbar}}
+
+    <!-- ========================== LOGIN MODEL ============================= -->
+    {{>loginModel}}
+    <!-- ========================== END LOGIN MODEL ============================= -->
+
+
+    <!-- ========================== SIGNUP MODEL ============================= -->
+    {{>signUpModel}}
+    <!-- ========================== END SIGNUP MODEL ============================= -->
+
+
+    <!-- ========================== SIGNUP BY MOBILE NO. MODEL ============================= -->
+    {{>signUpModelByMobileNumber}}
+    <!-- ========================== END SIGNUP BY MOBILE NO. MODEL ============================= -->
+
+
+    <div class="container mt-3">
+        <h4>Property Details</h4>
+        <hr class="hr">
+
+
+        <form>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Apartment Type*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Apartments</option>
+                            <option>Hostel</option>
+                            <option>Rooms</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Apartment Name*</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Property Size">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">BHK Type*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1 BHK</option>
+                            <option>2 BHK</option>
+                            <option>3 BHK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Floor*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Ground</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Total Floor*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Ground Only</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Property Age*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Under Construction</option>
+                            <option>Less than a year</option>
+                            <option>1 to 3 year </option>
+                            <option>3 to 5 year </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Facing</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>North</option>
+                            <option>South</option>
+                            <option>West</option>
+                            <option>East</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Property Size*</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Property Size">
+            </div>
+            <br>
+            <hr class="hr">
+            <h4>Locality Details</h4>
+            <hr class="hr">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">City*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Bangalore</option>
+                            <option>gwalior</option>
+                            <option>bhind</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Locality</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Near By LandMark">
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Street/Area</label>
+                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+            </div><br>
+            <hr class="hr">
+            <h4>Mark Locality on Map</h4>
+            <hr class="hr">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229085.13090970786!2d78.05081053394773!3d26.214396020056427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d1792291fb%3A0xff4fb56d65bc3adf!2sGwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1604642810957!5m2!1sen!2sin"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <br>
+            <hr class="hr">
+            <h4>Rental Details</h4>
+            <h6>Provide Rental Details About Your Property</h6>
+            <hr class="hr">
+            <h6>Property Available For</h6>
+            <div class="form-group">
+                <input type="radio" id="formGroupExampleInput">
+                <label for="formGroupExampleInput">Only Rent</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">Expected Rent*</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Rs.
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="max upto 1.2lacks" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput">Expected Deposit*</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Rs.
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="max upto 10k" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="checkbox" id="formGroupExampleInput">
+                <label for="formGroupExampleInput">Negotiable</label>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Maintenance</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select</option>
+                    <option>Maintenance Included</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Available From*</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Preferd Tenants*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Faminly</option>
+                            <option>Single</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Furnishing*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Furnished</option>
+                            <option>Unfurnished</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Parking*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Bike</option>
+                            <option>Bike and Car</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Description</label>
+                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <br>
+            <hr class="hr">
+            <h4>Property Photos</h4>
+            <h6>Upload Photos and Videos</h6>
+            <hr class="hr">
+
+            <div class="container">
+                <h6>UPLOAD UPTO 20 PHOTOS</h6>
+                <br>
+                <div class="container d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="container col-xl-3 col-lg-4 col-md-6 col-sm-12 flex-box mb-2 ">
+                            <img src="./images/upload.svg" class="img-thumbnail" width="150px" alt="">
+                        </div>
+                        ​<div class="container col-xl-3 col-lg-4 col-md-6 col-sm-12 flex-box mb-2">
+                            <img src="./images/upload.svg" class="img-thumbnail" width="150px" alt="">
+                        </div>
+                        ​<div class="container col-xl-3 col-lg-4 col-md-6 col-sm-12 flex-box mb-2">
+                            <img src="./images/upload.svg" class="img-thumbnail" width="150px" alt="">
+                        </div>
+                        ​<div class="container col-xl-3 col-lg-4 col-md-6 col-sm-12 flex-box mb-2">
+                            <img src="./images/upload.svg" class="img-thumbnail" width="150px" alt="">
+                        </div>
+                    </div>
+                    ​
+                </div>
+
+
+                <br>
+                <hr class="hr">
+                <br>
+                <h4 class="text-center">OR</h4>
+                <br>
+                <hr class="hr">
+                <div class="container d-flex align-items-center justify-content-center flex-column">
+                    <img src="./images/video-camera.svg" width="30px" alt="">
+                    <br>
+                    <h5>Add Video to get 3X more responces.</h5>
+                    <p>90% tenants contact on properties with videos</p>
+                    <br>
+                    <button class="btn btn-dark">Add Videos</button>
+                    <br>
+
+                </div>
+
+            </div>
+
+            <br>
+            <hr class="hr">
+            <h4>Amenities</h4>
+            <h6>Provide additional details about your property to get maximum visibility</h6>
+            <hr class="hr">
+
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">Bathrooms(s)*</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Rs.
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput">Balcony</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                Rs.
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Water Supply</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Borewell</option>
+                            <option>Municipal</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Gyms*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Non Veg Allowed*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Gated Security*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Who will show the house*</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Select</option>
+                            <option>Neighbours</option>
+                            <option>Relative</option>
+                            <option>Friends</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlSelect1">Who will show the house*</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span><img src="./images/india.svg" width="20px" alt=""></span>
+                                <span> +91</span>
+                            </span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="0" aria-label="Secondary Number"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <hr class="hr">
+            <h6>Select the Available Amenities</h6>
+            <hr class="hr">
+            <div class="container ">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="checkbox" id="formGroupExampleInput">
+                            <label for="formGroupExampleInput"><i class="fa fa-wifi" aria-hidden="true"></i>
+                                Lift</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="checkbox" id="formGroupExampleInput">
+                            <label for="formGroupExampleInput"><i class="fa fa-wifi" aria-hidden="true"></i> Internet
+                                Services</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="checkbox" id="formGroupExampleInput">
+                            <label for="formGroupExampleInput"><i class="fa fa-wifi" aria-hidden="true"></i> Air
+                                Conditioner</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <input type="checkbox" id="formGroupExampleInput">
+                            <label for="formGroupExampleInput"><i class="fa fa-wifi" aria-hidden="true"></i> Gym</label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <br>
+            <button class="btn btn-dark btn-block "> Save & Continue</button>
+            <br>
+        </form>
+    </div>
+
+    {{>footer}}
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
